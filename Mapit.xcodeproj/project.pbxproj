@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0E79BE099F8423DF66847F /* Pods_MapitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */; };
+		59F781AB9D5C4152FE76380A /* Pods_Mapit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */; };
+		65CC0D7F223FE646000BB296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D7E223FE646000BB296 /* AppDelegate.swift */; };
+		65CC0D81223FE646000BB296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D80223FE646000BB296 /* ViewController.swift */; };
+		65CC0D84223FE646000BB296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D82223FE646000BB296 /* Main.storyboard */; };
+		65CC0D86223FE648000BB296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D85223FE648000BB296 /* Assets.xcassets */; };
+		65CC0D89223FE648000BB296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D87223FE648000BB296 /* LaunchScreen.storyboard */; };
+		65CC0D94223FE648000BB296 /* MapitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D93223FE648000BB296 /* MapitTests.swift */; };
+		65CC0D9F223FE648000BB296 /* MapitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D9E223FE648000BB296 /* MapitUITests.swift */; };
+		65CC0DAE224057E5000BB296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */; };
+		E0A48A00FE0DB0DCE7554DE0 /* Pods_MapitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7D8CED260F9A205E158EFA /* Pods_MapitUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65CC0D90223FE648000BB296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65CC0D73223FE646000BB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65CC0D7A223FE646000BB296;
+			remoteInfo = Mapit;
+		};
+		65CC0D9B223FE648000BB296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65CC0D73223FE646000BB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65CC0D7A223FE646000BB296;
+			remoteInfo = Mapit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11A967AA79C17B194AAC3536 /* Pods-Mapit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapit/Pods-Mapit.release.xcconfig"; sourceTree = "<group>"; };
+		39D980209353D5886E9590A8 /* Pods-MapitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapitUITests/Pods-MapitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C34BB64ADF261A4C3C35FA1 /* Pods-MapitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapitUITests/Pods-MapitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mapit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CC0D7B223FE646000BB296 /* Mapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CC0D7E223FE646000BB296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65CC0D80223FE646000BB296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65CC0D83223FE646000BB296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65CC0D85223FE648000BB296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65CC0D88223FE648000BB296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65CC0D8A223FE648000BB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CC0D8F223FE648000BB296 /* MapitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CC0D93223FE648000BB296 /* MapitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapitTests.swift; sourceTree = "<group>"; };
+		65CC0D95223FE648000BB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CC0D9A223FE648000BB296 /* MapitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CC0D9E223FE648000BB296 /* MapitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapitUITests.swift; sourceTree = "<group>"; };
+		65CC0DA0223FE648000BB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A7D8CED260F9A205E158EFA /* Pods_MapitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09E3281570B914705DBBD79 /* Pods-MapitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapitTests/Pods-MapitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3441816A1E460FBEC150C1B /* Pods-Mapit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapit/Pods-Mapit.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC8EC8EF3782C6CC3B034B0 /* Pods-MapitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapitTests/Pods-MapitTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65CC0D78223FE646000BB296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F781AB9D5C4152FE76380A /* Pods_Mapit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D8C223FE648000BB296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E79BE099F8423DF66847F /* Pods_MapitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D97223FE648000BB296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A48A00FE0DB0DCE7554DE0 /* Pods_MapitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F5672A9E75E2C625698A8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */,
+				B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */,
+				8A7D8CED260F9A205E158EFA /* Pods_MapitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65CC0D72223FE646000BB296 = {
+			isa = PBXGroup;
+			children = (
+				65CC0D7D223FE646000BB296 /* Mapit */,
+				65CC0D92223FE648000BB296 /* MapitTests */,
+				65CC0D9D223FE648000BB296 /* MapitUITests */,
+				65CC0D7C223FE646000BB296 /* Products */,
+				B2996ECF28ECE7F59E01B448 /* Pods */,
+				0F5672A9E75E2C625698A8A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65CC0D7C223FE646000BB296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65CC0D7B223FE646000BB296 /* Mapit.app */,
+				65CC0D8F223FE648000BB296 /* MapitTests.xctest */,
+				65CC0D9A223FE648000BB296 /* MapitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65CC0D7D223FE646000BB296 /* Mapit */ = {
+			isa = PBXGroup;
+			children = (
+				65CC0DAC223FEAF1000BB296 /* Controllers */,
+				65CC0D7E223FE646000BB296 /* AppDelegate.swift */,
+				65CC0D82223FE646000BB296 /* Main.storyboard */,
+				65CC0D85223FE648000BB296 /* Assets.xcassets */,
+				65CC0D87223FE648000BB296 /* LaunchScreen.storyboard */,
+				65CC0D8A223FE648000BB296 /* Info.plist */,
+				65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */,
+			);
+			path = Mapit;
+			sourceTree = "<group>";
+		};
+		65CC0D92223FE648000BB296 /* MapitTests */ = {
+			isa = PBXGroup;
+			children = (
+				65CC0D93223FE648000BB296 /* MapitTests.swift */,
+				65CC0D95223FE648000BB296 /* Info.plist */,
+			);
+			path = MapitTests;
+			sourceTree = "<group>";
+		};
+		65CC0D9D223FE648000BB296 /* MapitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65CC0D9E223FE648000BB296 /* MapitUITests.swift */,
+				65CC0DA0223FE648000BB296 /* Info.plist */,
+			);
+			path = MapitUITests;
+			sourceTree = "<group>";
+		};
+		65CC0DAC223FEAF1000BB296 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65CC0D80223FE646000BB296 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2996ECF28ECE7F59E01B448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3441816A1E460FBEC150C1B /* Pods-Mapit.debug.xcconfig */,
+				11A967AA79C17B194AAC3536 /* Pods-Mapit.release.xcconfig */,
+				DAC8EC8EF3782C6CC3B034B0 /* Pods-MapitTests.debug.xcconfig */,
+				B09E3281570B914705DBBD79 /* Pods-MapitTests.release.xcconfig */,
+				4C34BB64ADF261A4C3C35FA1 /* Pods-MapitUITests.debug.xcconfig */,
+				39D980209353D5886E9590A8 /* Pods-MapitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65CC0D7A223FE646000BB296 /* Mapit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CC0DA3223FE648000BB296 /* Build configuration list for PBXNativeTarget "Mapit" */;
+			buildPhases = (
+				17E9B678869D0BF91FCA2965 /* [CP] Check Pods Manifest.lock */,
+				65CC0D77223FE646000BB296 /* Sources */,
+				65CC0D78223FE646000BB296 /* Frameworks */,
+				65CC0D79223FE646000BB296 /* Resources */,
+				9288BEEC29F53B751691382F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mapit;
+			productName = Mapit;
+			productReference = 65CC0D7B223FE646000BB296 /* Mapit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65CC0D8E223FE648000BB296 /* MapitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CC0DA6223FE648000BB296 /* Build configuration list for PBXNativeTarget "MapitTests" */;
+			buildPhases = (
+				A99C3D79A966C3A4C57BEA4D /* [CP] Check Pods Manifest.lock */,
+				65CC0D8B223FE648000BB296 /* Sources */,
+				65CC0D8C223FE648000BB296 /* Frameworks */,
+				65CC0D8D223FE648000BB296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65CC0D91223FE648000BB296 /* PBXTargetDependency */,
+			);
+			name = MapitTests;
+			productName = MapitTests;
+			productReference = 65CC0D8F223FE648000BB296 /* MapitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65CC0D99223FE648000BB296 /* MapitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CC0DA9223FE648000BB296 /* Build configuration list for PBXNativeTarget "MapitUITests" */;
+			buildPhases = (
+				C5B7CBD3A37E7C9306864A8D /* [CP] Check Pods Manifest.lock */,
+				65CC0D96223FE648000BB296 /* Sources */,
+				65CC0D97223FE648000BB296 /* Frameworks */,
+				65CC0D98223FE648000BB296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65CC0D9C223FE648000BB296 /* PBXTargetDependency */,
+			);
+			name = MapitUITests;
+			productName = MapitUITests;
+			productReference = 65CC0D9A223FE648000BB296 /* MapitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65CC0D73223FE646000BB296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AFL;
+				TargetAttributes = {
+					65CC0D7A223FE646000BB296 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					65CC0D8E223FE648000BB296 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 65CC0D7A223FE646000BB296;
+					};
+					65CC0D99223FE648000BB296 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 65CC0D7A223FE646000BB296;
+					};
+				};
+			};
+			buildConfigurationList = 65CC0D76223FE646000BB296 /* Build configuration list for PBXProject "Mapit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65CC0D72223FE646000BB296;
+			productRefGroup = 65CC0D7C223FE646000BB296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65CC0D7A223FE646000BB296 /* Mapit */,
+				65CC0D8E223FE648000BB296 /* MapitTests */,
+				65CC0D99223FE648000BB296 /* MapitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65CC0D79223FE646000BB296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CC0D89223FE648000BB296 /* LaunchScreen.storyboard in Resources */,
+				65CC0DAE224057E5000BB296 /* GoogleService-Info.plist in Resources */,
+				65CC0D86223FE648000BB296 /* Assets.xcassets in Resources */,
+				65CC0D84223FE646000BB296 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D8D223FE648000BB296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D98223FE648000BB296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17E9B678869D0BF91FCA2965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mapit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9288BEEC29F53B751691382F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mapit/Pods-Mapit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapit/Pods-Mapit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A99C3D79A966C3A4C57BEA4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B7CBD3A37E7C9306864A8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65CC0D77223FE646000BB296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CC0D81223FE646000BB296 /* ViewController.swift in Sources */,
+				65CC0D7F223FE646000BB296 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D8B223FE648000BB296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CC0D94223FE648000BB296 /* MapitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CC0D96223FE648000BB296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CC0D9F223FE648000BB296 /* MapitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65CC0D91223FE648000BB296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65CC0D7A223FE646000BB296 /* Mapit */;
+			targetProxy = 65CC0D90223FE648000BB296 /* PBXContainerItemProxy */;
+		};
+		65CC0D9C223FE648000BB296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65CC0D7A223FE646000BB296 /* Mapit */;
+			targetProxy = 65CC0D9B223FE648000BB296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65CC0D82223FE646000BB296 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65CC0D83223FE646000BB296 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65CC0D87223FE648000BB296 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65CC0D88223FE648000BB296 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65CC0DA1223FE648000BB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65CC0DA2223FE648000BB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65CC0DA4223FE648000BB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3441816A1E460FBEC150C1B /* Pods-Mapit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = Mapit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.afl.Mapit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65CC0DA5223FE648000BB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A967AA79C17B194AAC3536 /* Pods-Mapit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = Mapit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.afl.Mapit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65CC0DA7223FE648000BB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC8EC8EF3782C6CC3B034B0 /* Pods-MapitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = MapitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AFL.MapitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapit.app/Mapit";
+			};
+			name = Debug;
+		};
+		65CC0DA8223FE648000BB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09E3281570B914705DBBD79 /* Pods-MapitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = MapitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AFL.MapitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapit.app/Mapit";
+			};
+			name = Release;
+		};
+		65CC0DAA223FE648000BB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C34BB64ADF261A4C3C35FA1 /* Pods-MapitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = MapitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AFL.MapitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mapit;
+			};
+			name = Debug;
+		};
+		65CC0DAB223FE648000BB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D980209353D5886E9590A8 /* Pods-MapitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 863LU4ZDWG;
+				INFOPLIST_FILE = MapitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AFL.MapitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mapit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65CC0D76223FE646000BB296 /* Build configuration list for PBXProject "Mapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CC0DA1223FE648000BB296 /* Debug */,
+				65CC0DA2223FE648000BB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65CC0DA3223FE648000BB296 /* Build configuration list for PBXNativeTarget "Mapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CC0DA4223FE648000BB296 /* Debug */,
+				65CC0DA5223FE648000BB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65CC0DA6223FE648000BB296 /* Build configuration list for PBXNativeTarget "MapitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CC0DA7223FE648000BB296 /* Debug */,
+				65CC0DA8223FE648000BB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65CC0DA9223FE648000BB296 /* Build configuration list for PBXNativeTarget "MapitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CC0DAA223FE648000BB296 /* Debug */,
+				65CC0DAB223FE648000BB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65CC0D73223FE646000BB296 /* Project object */;
+}
