@@ -15,6 +15,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
     @IBOutlet weak var mapView: MKMapView!
     
+    private var documentRef: DocumentReference?
+    private(set) var mapits = [Mapit]()
+    
     private lazy var db: Firestore = {
         
         let firestoreDB = Firestore.firestore()
@@ -46,6 +49,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.mapView.delegate = self
         
         setupUI()
+        configureObservers()
+    }
+    
+    private func configureObservers() {
+        
+        db.collection("mapits").addSnapshotListener {  [weak self] snapshot, error in
+            
+            guard let snapshot = snapshot, error == nil else {
+                print("error fetching document")
+                return
+            }
+            
+            snapshot.documentChanges.forEach { diff in
+                
+                if diff.type == .added {
+                    if let mapit = Mapit(diff.document) {
+                        self?.mapits.append(mapit)
+                        self?.updateAnnotations()
+                    }
+                } else if diff.type == .removed {
+                    if let mapit = Mapit(diff.document) {
+                        if let mapitsList = self?.mapits {
+                            self?.mapits = mapitsList.filter { $0.documentId != mapit.documentId }
+                            self?.updateAnnotations()
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     
     
@@ -57,19 +90,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
 
     @IBAction func mapitButtonPressed(_ sender: Any) {
+        savePinToFirebase()
+    }
+    
+    private func updateAnnotations() {
         
-        guard let location = self.locationManager.location else {
-            return
+        DispatchQueue.main.async {
+            self.mapits.forEach {
+                self.addMapitToMap(mapit: $0)
+            }
         }
         
+    }
+    
+    private func addMapitToMap(mapit: Mapit) {
+        
         let annotation = MKPointAnnotation()
-        annotation.title = "Here"
-        annotation.subtitle = "nownownownownownownow"
-        annotation.coordinate =  location.coordinate
+            annotation.title = "Here"
+            annotation.subtitle = mapit.reportedDate.formatAsString()
+            annotation.coordinate =  CLLocationCoordinate2D(latitude: mapit.latitude, longitude: mapit.longitude)
         
-        self.mapView.addAnnotation(annotation);
+        self.mapView.addAnnotation(annotation)
         
-        savePinToFirebase(coordinates: location.coordinate)
+        
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
@@ -77,13 +120,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    private func savePinToFirebase(coordinates: CLLocationCoordinate2D) {
-        db.collection("mapits").addDocument(data: ["latitude": coordinates.latitude, "longitude": coordinates.longitude]) { error in
+    
+    private func savePinToFirebase() {
+        
+        guard let location = self.locationManager.location else {
+            return
+        }
+        
+        var mapit = Mapit(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        
+        documentRef = db.collection("mapits").addDocument(data: mapit.toDictionary()) { [weak self] error in
             
             if let error = error {
                 print(error)
+               
             } else {
+                mapit.documentId = self?.documentRef?.documentID
                 print("location saved")
+                self?.addMapitToMap(mapit: mapit)
             }
         }
     }

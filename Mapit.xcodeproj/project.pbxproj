@@ -10,6 +10,8 @@
 		0C0E79BE099F8423DF66847F /* Pods_MapitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */; };
 		59F781AB9D5C4152FE76380A /* Pods_Mapit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */; };
 		655741CA224B95A50016FB7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 655741C9224B95A50016FB7A /* GoogleService-Info.plist */; };
+		655741CD224BA3C00016FB7A /* MapitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655741CC224BA3C00016FB7A /* MapitModel.swift */; };
+		655741D0224BAB1F0016FB7A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655741CF224BAB1F0016FB7A /* Date.swift */; };
 		65CC0D7F223FE646000BB296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D7E223FE646000BB296 /* AppDelegate.swift */; };
 		65CC0D81223FE646000BB296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D80223FE646000BB296 /* ViewController.swift */; };
 		65CC0D84223FE646000BB296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D82223FE646000BB296 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		4C34BB64ADF261A4C3C35FA1 /* Pods-MapitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapitUITests/Pods-MapitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mapit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		655741C9224B95A50016FB7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		655741CC224BA3C00016FB7A /* MapitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapitModel.swift; sourceTree = "<group>"; };
+		655741CF224BAB1F0016FB7A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		65CC0D7B223FE646000BB296 /* Mapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CC0D7E223FE646000BB296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CC0D80223FE646000BB296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		655741CB224BA3910016FB7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				655741CC224BA3C00016FB7A /* MapitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		655741CE224BAB050016FB7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				655741CF224BAB1F0016FB7A /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		65CC0D72223FE646000BB296 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +146,8 @@
 		65CC0D7D223FE646000BB296 /* Mapit */ = {
 			isa = PBXGroup;
 			children = (
+				655741CE224BAB050016FB7A /* Extensions */,
+				655741CB224BA3910016FB7A /* Model */,
 				65CC0DAC223FEAF1000BB296 /* Controllers */,
 				65CC0D7E223FE646000BB296 /* AppDelegate.swift */,
 				65CC0D82223FE646000BB296 /* Main.storyboard */,
@@ -418,8 +440,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655741CD224BA3C00016FB7A /* MapitModel.swift in Sources */,
 				65CC0D81223FE646000BB296 /* ViewController.swift in Sources */,
 				65CC0D7F223FE646000BB296 /* AppDelegate.swift in Sources */,
+				655741D0224BAB1F0016FB7A /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
