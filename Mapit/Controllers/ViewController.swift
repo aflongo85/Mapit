@@ -9,10 +9,21 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    
+    private lazy var db: Firestore = {
+        
+        let firestoreDB = Firestore.firestore()
+        let settings = firestoreDB.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        firestoreDB.settings = settings
+        
+        return firestoreDB
+        }()
     
     private lazy var locationManager: CLLocationManager = {
         
@@ -57,11 +68,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         annotation.coordinate =  location.coordinate
         
         self.mapView.addAnnotation(annotation);
+        
+        savePinToFirebase(coordinates: location.coordinate)
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         let region = MKCoordinateRegion(center: self.mapView.userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08))
         self.mapView.setRegion(region, animated: true)
+    }
+    
+    private func savePinToFirebase(coordinates: CLLocationCoordinate2D) {
+        db.collection("mapits").addDocument(data: ["latitude": coordinates.latitude, "longitude": coordinates.longitude]) { error in
+            
+            if let error = error {
+                print(error)
+            } else {
+                print("location saved")
+            }
+        }
     }
 }
 

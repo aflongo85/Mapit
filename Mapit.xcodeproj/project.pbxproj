@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C0E79BE099F8423DF66847F /* Pods_MapitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */; };
 		59F781AB9D5C4152FE76380A /* Pods_Mapit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */; };
+		655741CA224B95A50016FB7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 655741C9224B95A50016FB7A /* GoogleService-Info.plist */; };
 		65CC0D7F223FE646000BB296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D7E223FE646000BB296 /* AppDelegate.swift */; };
 		65CC0D81223FE646000BB296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D80223FE646000BB296 /* ViewController.swift */; };
 		65CC0D84223FE646000BB296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D82223FE646000BB296 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		65CC0D89223FE648000BB296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0D87223FE648000BB296 /* LaunchScreen.storyboard */; };
 		65CC0D94223FE648000BB296 /* MapitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D93223FE648000BB296 /* MapitTests.swift */; };
 		65CC0D9F223FE648000BB296 /* MapitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC0D9E223FE648000BB296 /* MapitUITests.swift */; };
-		65CC0DAE224057E5000BB296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */; };
 		E0A48A00FE0DB0DCE7554DE0 /* Pods_MapitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7D8CED260F9A205E158EFA /* Pods_MapitUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,7 @@
 		39D980209353D5886E9590A8 /* Pods-MapitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapitUITests/Pods-MapitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C34BB64ADF261A4C3C35FA1 /* Pods-MapitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapitUITests/Pods-MapitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		609B5471CCAEA5F4AD30D10B /* Pods_Mapit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mapit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655741C9224B95A50016FB7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65CC0D7B223FE646000BB296 /* Mapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CC0D7E223FE646000BB296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CC0D80223FE646000BB296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		65CC0D9A223FE648000BB296 /* MapitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CC0D9E223FE648000BB296 /* MapitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapitUITests.swift; sourceTree = "<group>"; };
 		65CC0DA0223FE648000BB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7D8CED260F9A205E158EFA /* Pods_MapitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09E3281570B914705DBBD79 /* Pods-MapitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapitTests/Pods-MapitTests.release.xcconfig"; sourceTree = "<group>"; };
 		B87DC629727377BDAEAA4E87 /* Pods_MapitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +132,7 @@
 				65CC0D85223FE648000BB296 /* Assets.xcassets */,
 				65CC0D87223FE648000BB296 /* LaunchScreen.storyboard */,
 				65CC0D8A223FE648000BB296 /* Info.plist */,
-				65CC0DAD224057E5000BB296 /* GoogleService-Info.plist */,
+				655741C9224B95A50016FB7A /* GoogleService-Info.plist */,
 			);
 			path = Mapit;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CC0D89223FE648000BB296 /* LaunchScreen.storyboard in Resources */,
-				65CC0DAE224057E5000BB296 /* GoogleService-Info.plist in Resources */,
+				655741CA224B95A50016FB7A /* GoogleService-Info.plist in Resources */,
 				65CC0D86223FE648000BB296 /* Assets.xcassets in Resources */,
 				65CC0D84223FE646000BB296 /* Main.storyboard in Resources */,
 			);
